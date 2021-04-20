@@ -39,6 +39,9 @@ body {
   padding-left: 0;
   &-item {
     margin-right: 52px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
   &-link {
     color: $dark;
@@ -46,13 +49,16 @@ body {
   }
 }
 .cart {
-  background-image: url(../img/cart.svg);
-  padding-left: 45px;
-  display: block;
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-position: 0 center;
+    background-image: url(../img/cart.svg);
+    padding-left: 46px;
+    display: block;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-right: 0;
   &-count {
     background-image: url(../img/cart-bg.svg);
     background-repeat: no-repeat;
@@ -60,7 +66,7 @@ body {
     color: #fff;
     font-size: 12px;
     font-weight: 700;
-    padding: 10px 24px;
+    padding: 10px 19px 10px 23px;
     display: block;
   }
 }
@@ -126,7 +132,10 @@ body {
       margin-top: 17px;
     }
   }
-}
+  &-image {
+    width: 100%;
+    max-width: 556px;
+}}
 .notice {
   text-align: center;
   color: #fff;
@@ -215,7 +224,7 @@ body {
   &-logo {
     flex: 0 0 40%;
     img {
-      margin-top: 15px;
+    margin-top: 15px;
     }
   }
   &-nav {
